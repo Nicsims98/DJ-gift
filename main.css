@@ -1,0 +1,100 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    padding: 1em;
+    text-align: center;
+}
+
+section {
+    margin: 1em 0;
+}
+
+footer {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.story-text {
+    font-size: 18px;
+    margin: 20px;
+    text-align: center;
+}
+
+.music-control {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.pixel-art {
+    image-rendering: pixelated;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 4px 2px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+#choices-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#combat-log, #inventory-log {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    text-align: left;
+}
+
+.footer {
+    position: absolute;
+    bottom: 10px;
+    font-size: 0.8em;
+}
+
+@media (max-width: 600px) {
+    .character-display {
+        width: 150px;
+        height: 150px;
+    }
+
+    .button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .story-text {
+        font-size: 16px;
+    }
+}
