@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini RPG for DJ/title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Hey there, DJ Welcome to your own Mini RPG Game</h1>
+        </header>
+        <main>
+            <section id="user-info-section">
+                <label for="user-name">Enter your name:</label>
+                <input type="text" id="user-name" placeholder="Your name">
+                <button id="start-game">Start Game</button>
+            </section>
+            <section id="character-section" style="display:none;">
+                <h2>Character Creation</h2>
+                <!-- Character creation form will go here -->
+            </section>
+            <section id="story-section" style="display:none;">
+                <h2>Story</h2>
+                <div id="story-container"></div>
+                <div id="choices-container"></div>
+            </section>
+            <section id="game-section" style="display:none;">
+                <h2>Game Interface</h2>
+                <div id="combat-log"></div>
+                <div id="inventory-log"></div>
+            </section>
+        </main>
+        <footer>
+            <audio id="background-music" loop></audio>
+        </footer>
+    </div>
+    <script type="module" src="assets/js/scripts.js"></script>
+</body>
+</html>
